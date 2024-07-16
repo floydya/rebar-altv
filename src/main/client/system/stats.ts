@@ -48,6 +48,8 @@ function update() {
         weapon: alt.Player.local.currentWeapon,
         weather: getPreviousWeatherType(),
         zone: getZone(alt.Player.local.pos),
+        pos: alt.Player.local.pos,
+        rot: alt.Player.local.rot,
     };
 
     view.emit(Events.localPlayer.stats.set, stats);

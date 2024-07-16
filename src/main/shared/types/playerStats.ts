@@ -1,4 +1,5 @@
 import { VehicleIndicatorLights } from 'alt-client';
+import { Vector3 } from 'alt-shared';
 
 type StreetData = {
     crossingRoad: string;
@@ -34,4 +35,6 @@ export type PlayerStats = {
     weapon: number;
     weather: string;
     zone: string;
+    pos: Vector3;
+    rot: Vector3;
 };

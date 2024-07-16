@@ -34,6 +34,8 @@ const data = ref<PlayerStats>({
     lights: [false, false],
     vehicleClass: -1,
     zone: '',
+    pos: { x: 0, y: 0, z: 0 },
+    rot: { x: 0, y: 0, z: 0 },
 });
 
 let isInit = false;
@@ -131,6 +133,12 @@ export function usePlayerStats() {
         }),
         isFlying: computed(() => {
             return data.value.isFlying;
+        }),
+        pos: computed(() => {
+            return data.value.pos;
+        }),
+        rot: computed(() => {
+            return data.value.rot;
         }),
     };
 }

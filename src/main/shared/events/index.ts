@@ -61,6 +61,7 @@ export const Events = {
         audio: {
             play: {
                 local: 'audio:player:sound:2d',
+                spatial: 'audio:player:sound:3d',
             },
         },
         controls: {
